@@ -15,6 +15,14 @@
 		<!-- asi mozem vyhodit --> <!-- <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" /> -->
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+		
+		<style>
+			#map {
+				height: 450px; /* Set the height of the map */
+				width: 80%;   /* Set the width of the map */
+			}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -62,11 +70,9 @@
 								<header class="major">
 									<span class="date"><img src="images/map.png" width="32" height="32"></span>
 									<h3>Mapa</h3>
+									<div id="map"></div>
 								</header>
 
-								<!-- <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
-								<div id="map" style="width: 100%; height: 100%;"></div>
-								
 								<p></p>
 
 								<header class="major">
@@ -116,6 +122,7 @@
 							<li><a href="https://www.freepik.com/icon/dress_7025678">Icon by JM Graphic</a></li>
 							<li><a href="https://www.freepik.com/icon/christmas_12363070#fromView=search&page=1&position=31&uuid=8e891872-ea46-4ba0-8d89-c61d435ed0c2">Icon by Paul J.</a></li>
 							<li><a href="https://www.freepik.com/icon/home_15796554">Icon by Shashank Singh</a></li>
+							<li><a href="https://www.freepik.com/icon/church_9159641#fromView=search&page=1&position=22&uuid=7100f61f-1ed6-4d9b-a270-e797eacdda39">Icon by madewithmi</a></li>
 						</ul>
 					</div>
 
@@ -129,36 +136,41 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
 			<script>
 
-				const map = L.map('map').setView([51.505, -0.09], 13);
+				const map = L.map('map').setView([48.2838, 17.266], 15);
 
-				const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-					maxZoom: 19,
-					attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+				const tiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+					attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+					subdomains: 'abcd',
+					maxZoom: 20
 				}).addTo(map);
 
-				const marker = L.marker([51.5, -0.09]).addTo(map)
-					.bindPopup('<b>Hello world!</b><br />I am a popup.').openPopup();
+				var churchIcon = L.icon({
+					iconUrl: 'images/church.png',
+					iconSize:     [45, 45], // size of the icon
+					iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
+					popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+				});
 
-				const circle = L.circle([51.508, -0.11], {
-					color: 'red',
-					fillColor: '#f03',
-					fillOpacity: 0.5,
-					radius: 500
-				}).addTo(map).bindPopup('I am a circle.');
+				var ndegustIcon = L.icon({
+					iconUrl: 'images/fork_spoon.png',
+					iconSize:     [55, 55], // size of the icon
+					iconAnchor:   [30, 40], // point of the icon which will correspond to marker's location
+					popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+				});
 
-				const polygon = L.polygon([
-					[51.509, -0.08],
-					[51.503, -0.06],
-					[51.51, -0.047]
-				]).addTo(map).bindPopup('I am a polygon.');
+				const church = L.marker([48.2888222, 17.2666017], {icon: churchIcon}).addTo(map)
+					.bindPopup('<b>Kapucínsky kostol najsvätejšej Trojice</b><br />');
 
+				const ndegust = L.marker([48.27867610323064, 17.26539825295299], {icon: ndegustIcon}).addTo(map)
+					.bindPopup('<b>Reštaurácia nDegust</b><br />');
 
-				const popup = L.popup()
-					.setLatLng([51.513, -0.09])
+/* 				const popup = L.popup()
+					.setLatLng([48.292079, 17.266074])
 					.setContent('I am a standalone popup.')
-					.openOn(map);
+					.openOn(map); */
 
 				function onMapClick(e) {
 					popup
@@ -168,6 +180,8 @@
 				}
 
 				map.on('click', onMapClick);
+
+				L.control.scale({metric: true, imperial: false}).addTo(map);
 
 			</script>
 

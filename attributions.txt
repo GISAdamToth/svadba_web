@@ -11,4 +11,5 @@ gift1: <a href="https://www.freepik.com/icon/christmas_12363070#fromView=search&
 home: <a href="https://www.freepik.com/icon/home_15796554">Icon by Shashank Singh</a>
 couple: <a href="https://www.freepik.com/icon/woman_13266483">Icon by pikulkeaw sriburin</a>
 email: <a href="https://www.freepik.com/search">Icon by Alfredo Hernandez</a>
-gift:
+church: <a href="https://www.freepik.com/icon/church_9159641#fromView=search&page=1&position=22&uuid=7100f61f-1ed6-4d9b-a270-e797eacdda39">Icon by madewithmi</a>
+ndegust: <a href="https://www.freepik.com/icon/spoon_13509575#fromView=search&page=1&position=30&uuid=f6ff680a-de7b-44bc-9c2f-2d4804deb5d6">Icon by bsd</a>
