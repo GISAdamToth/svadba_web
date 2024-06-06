@@ -2,3 +2,12 @@
 <a href="https://www.freepik.com/search">Icon by edt.im</a>
 <a href="https://www.freepik.com/search">Icon by JM Graphic</a>
 <a href="https://www.freepik.com/search#uuid=d5166bef-39e1-48c2-9a90-393ba7648614">Icon by Shashank Singh</a>
+
+email: <a href="https://www.freepik.com/search">Icon by Alfredo Hernandez</a>
+heart: <a href="https://www.freepik.com/icon/heart_1216575#fromView=keyword&page=1&position=9&uuid=c02ed675-d7cd-443d-8e83-f6a4f32f7557">Icon by itim2101</a>
+couple: <a href="https://www.freepik.com/icon/woman_13266483">Icon by pikulkeaw sriburin</a>
+home: <a href="https://www.freepik.com/icon/home_15796554">Icon by Shashank Singh</a>
+dress: <a href="https://www.freepik.com/icon/dress_7025678">Icon by JM Graphic</a>
+location: <a href="https://www.freepik.com/icon/placeholder_220425#fromView=image_search&page=1&position=0&uuid=0bb117e0-c180-4ad1-8997-c7174796f727">Icon by Smashicons</a>
+gift1: <a href="https://www.freepik.com/icon/christmas_12363070#fromView=search&page=1&position=31&uuid=8e891872-ea46-4ba0-8d89-c61d435ed0c2">Icon by Paul J.</a>
+gift:
