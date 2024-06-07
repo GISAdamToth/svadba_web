@@ -11,6 +11,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="assets/css/lightbox.min.css" rel="stylesheet">
+    	<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+
+		<style>
+			.gallery {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 30px;
+			}
+			.gallery a {
+				display: block;
+				width: 250px; /* Adjust the size as needed */
+				height: 250px;
+				overflow: hidden;
+			}
+			.gallery img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -48,9 +69,31 @@
 							</header>
 						</article>
 
-						<h3>Left &amp; Right</h3>
-						<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-						<p><span class="image right"><img src="images/pic09.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
+						<h3>Janka o Adamovi</h3>
+						<p>
+							<span class="image left"><img src="images/pic08.jpg" alt="" /></span>
+							Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.
+						</p>
+						
+						<h3 class="aligned_right">Adam o Janke</h3>
+						<p>
+							<span class="image right"><img src="images/pic09.jpg" alt="" /></span>
+							Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.
+						</p>
+
+						<h3>Galéria</h3>
+						<div class="gallery">
+							<a href="images/chorvatsko_zapadslnka.jpg" data-lightbox="mygallery" data-title="Image 1 Description">
+								<img src="images/chorvatsko_zapadslnka.jpg" alt="Image 1">
+							</a>
+							<a href="images/bystralavka_navyska.jpg" data-lightbox="mygallery" data-title="Image 2 Description">
+								<img src="images/bystralavka_navyska.jpg" alt="Image 2">
+							</a>
+							<a href="images/poludnica_objatie.jpg" data-lightbox="mygallery" data-title="Image 3 Description">
+								<img src="images/poludnica_objatie.jpg" alt="Image 3">
+							</a>
+							<!-- Add more images as needed -->
+						</div>
 					</div>
 				
 				<!-- Copyright -->
@@ -59,6 +102,7 @@
 						<ul>
 							<li><a href="https://www.freepik.com/icon/woman_13266483">Icon by pikulkeaw sriburin</a></li>
 						</ul>
+						<ul><li><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox</a> Copyright &copy; 2015 Lokesh Dhakar</li></ul>
 					</div>
 
 			</div>
