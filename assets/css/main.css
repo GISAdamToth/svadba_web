@@ -4702,3 +4702,7 @@ input, select, textarea {
 	a.hyperlink {
 		color: #00a0ff;
 	}
+
+	h3.aligned_right {
+		text-align: right;
+	}
