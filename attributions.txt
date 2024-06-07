@@ -2,3 +2,15 @@
 <a href="https://www.freepik.com/search">Icon by edt.im</a>
 <a href="https://www.freepik.com/search">Icon by JM Graphic</a>
 <a href="https://www.freepik.com/search#uuid=d5166bef-39e1-48c2-9a90-393ba7648614">Icon by Shashank Singh</a>
+
+
+heart: <a href="https://www.freepik.com/icon/heart_1216575#fromView=keyword&page=1&position=9&uuid=c02ed675-d7cd-443d-8e83-f6a4f32f7557">Icon by itim2101</a>
+location: <a href="https://www.freepik.com/icon/placeholder_220425#fromView=image_search&page=1&position=0&uuid=0bb117e0-c180-4ad1-8997-c7174796f727">Icon by Smashicons</a>
+dress: <a href="https://www.freepik.com/icon/dress_7025678">Icon by JM Graphic</a>
+gift1: <a href="https://www.freepik.com/icon/christmas_12363070#fromView=search&page=1&position=31&uuid=8e891872-ea46-4ba0-8d89-c61d435ed0c2">Icon by Paul J.</a>
+home: <a href="https://www.freepik.com/icon/home_15796554">Icon by Shashank Singh</a>
+couple: <a href="https://www.freepik.com/icon/woman_13266483">Icon by pikulkeaw sriburin</a>
+email: <a href="https://www.freepik.com/search">Icon by Alfredo Hernandez</a>
+church: <a href="https://www.freepik.com/icon/church_9159641#fromView=search&page=1&position=22&uuid=7100f61f-1ed6-4d9b-a270-e797eacdda39">Icon by madewithmi</a>
+ndegust: <a href="https://www.freepik.com/icon/spoon_13509575#fromView=search&page=1&position=30&uuid=f6ff680a-de7b-44bc-9c2f-2d4804deb5d6">Icon by bsd</a>
+parking: <a href="https://www.freepik.com/icon/location_15723490#fromView=search&page=1&position=68&uuid=9aca9c7a-f4a7-4015-8bc8-f1ecdb92f594">Icon by nahumam</a>
