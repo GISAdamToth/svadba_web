@@ -15,14 +15,6 @@
 		<!-- asi mozem vyhodit --> <!-- <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" /> -->
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-		
-		<style>
-			#map {
-				height: 450px; /* Set the height of the map */
-				width: 80%;   /* Set the width of the map */
-			}
-		</style>
-
 	</head>
 	<body class="is-preload">
 
@@ -70,11 +62,12 @@
 								<header class="major">
 									<span class="date"><img src="images/map.png" width="32" height="32"></span>
 									<h3>Mapa</h3>
-									<div id="map"></div>
 									<div>
-										<p></p>
-										<p>Sviatosť manželstva uzavrieme v kostole najsvätejšej Trojice (Holubyho 92 Pezinok).</p>
-										<p>Svadobná hostina a zábava pre pozvaných hostí bude v reštaurácii nDegust (Za dráhou 21 Pezinok).</p>
+										<div id="map"></div>
+										<div id="mapinfo">
+											<p>Sviatosť manželstva uzavrieme v kostole najsvätejšej Trojice (Holubyho 92 Pezinok).</p>
+											<p>Svadobná hostina a zábava pre pozvaných hostí bude v reštaurácii nDegust (Za dráhou 21 Pezinok).</p>
+										</div>
 									</div>
 								</header>
 

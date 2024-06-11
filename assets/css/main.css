@@ -4706,3 +4706,13 @@ input, select, textarea {
 	h3.aligned_right {
 		text-align: right;
 	}
+
+	#mapinfo {
+		display: inline-block;
+	}
+
+	#map {
+		height: 450px; /* Set the height of the map */
+		width: 80%;   /* Set the width of the map */
+		display: inline-block;
+	}
