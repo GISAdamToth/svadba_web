@@ -65,10 +65,9 @@
 									<div>
 										<div id="map"></div>
 										<div id="mapinfo">
-											<p><b>obrad</b></p>
-											<p>kostole najsvätejšej Trojice (Holubyho 92 Pezinok).</p>
-											<p>Svadobná <b>hostina</b> a zábava pre pozvaných hostí bude v</p>
-											<p>reštaurácii nDegust (Za dráhou 21 Pezinok).</p>
+											<p></p>
+											<p><b>Sv. omša so sobášnym obradom</b>: kostol najsvätejšej Trojice (Holubyho 92 Pezinok)</p>
+											<p><b>Hostina a zábava</b> pre pozvaných hostí: reštaurácia nDegust (Za dráhou 21 Pezinok)</p>
 										</div>
 									</div>
 								</header>
@@ -106,7 +105,7 @@
 										Odvoz a ubytovanie nechávame vo vašej réžii. 
 										V blízkosti miesta hostiny sa nachádza vlaková stanica, z ktorej pravidelne odchádzajú spoje smer Bratislava a Trnava.
 										Na rovnakom mieste je aj autobusové nástupište, odkiaľ sa dostanete do okolitých obcí.
-										Ak sa vám v neskorých nočných hodinách po svadbe nebude chcieť cestovať, ale prespať v Pezinku, odporúčame rezervovať si ubytovanie v týchto zariadeniach:
+										Ak sa vám v neskorých nočných hodinách po svadbe nebude chcieť cestovať, ale prespať v Pezinku, odporúčame rezervovať si ubytovanie v hoteloch a ubytovacích zariadeniach v Pezinku.
 									</p>
 								</header>
 
@@ -125,6 +124,8 @@
 							<li><a href="https://www.freepik.com/icon/church_9159641#fromView=search&page=1&position=22&uuid=7100f61f-1ed6-4d9b-a270-e797eacdda39">Icon by madewithmi</a></li>
 							<li><a href="https://www.freepik.com/icon/location_15723490#fromView=search&page=1&position=68&uuid=9aca9c7a-f4a7-4015-8bc8-f1ecdb92f594">Icon by nahumam</a></li>
 							<li><a href="https://www.freepik.com/icon/spoon_13509575#fromView=search&page=1&position=30&uuid=f6ff680a-de7b-44bc-9c2f-2d4804deb5d6">Icon by bsd</a></li>
+							<li><a href="https://www.freepik.com/icon/train_14787346#fromView=search&page=1&position=43&uuid=051d39b1-28ca-4815-856a-04c2ab7bbdb8">Icon by PIXARTIST</a></li>
+							<li><a href="https://www.freepik.com/icon/transport_15795988#fromView=search&page=1&position=5&uuid=265a551b-b90a-48dc-9dfa-611e52b2ad9c">Icon by Shashank Singh</a></li>
 						</ul>
 					</div>
 
@@ -160,34 +161,54 @@
 					iconUrl: 'images/fork_spoon.png',
 					iconSize:     [55, 55], // size of the icon
 					iconAnchor:   [30, 40], // point of the icon which will correspond to marker's location
-					popupAnchor:  [0, -25] // point from which the popup should open relative to the iconAnchor
+					popupAnchor:  [-1, -25] // point from which the popup should open relative to the iconAnchor
 				});
 
 				var parkingIconC = L.icon({
 					iconUrl: 'images/parking.png',
-					iconSize:     [35, 35], // size of the icon
+					iconSize:     [32, 32], // size of the icon
 					iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
-					popupAnchor:  [0, -10] // point from which the popup should open relative to the iconAnchor
+					popupAnchor:  [-3, -10] // point from which the popup should open relative to the iconAnchor
 				});
 
 				var parkingIconN = L.icon({
 					iconUrl: 'images/parking.png',
-					iconSize:     [35, 35], // size of the icon
+					iconSize:     [32, 32], // size of the icon
 					iconAnchor:   [30, 30], // point of the icon which will correspond to marker's location
-					popupAnchor:  [-10, -20] // point from which the popup should open relative to the iconAnchor
+					popupAnchor:  [-13, -20] // point from which the popup should open relative to the iconAnchor
+				});
+
+				var trainIcon = L.icon({
+					iconUrl: 'images/train.png',
+					iconSize:     [30, 30], // size of the icon
+					iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
+					popupAnchor:  [-5, -10] // point from which the popup should open relative to the iconAnchor
+				});
+
+				var busIcon = L.icon({
+					iconUrl: 'images/bus.png',
+					iconSize:     [23, 23], // size of the icon
+					iconAnchor:   [25, 20], // point of the icon which will correspond to marker's location
+					popupAnchor:  [-14, -15] // point from which the popup should open relative to the iconAnchor
 				});
 
 				const church = L.marker([48.2888222, 17.2666017], {icon: churchIcon}).addTo(map)
-					.bindPopup('<b>Kapucínsky kostol najsvätejšej Trojice</b><br />');
+					.bindPopup('<b>Kapucínsky kostol najsvätejšej Trojice</b>');
 
 				const ndegust = L.marker([48.27867610323064, 17.26539825295299], {icon: ndegustIcon}).addTo(map)
-					.bindPopup('<b>Reštaurácia nDegust</b><br />');
+					.bindPopup('<b>Reštaurácia nDegust</b>');
 
 				const parkingC = L.marker([48.2876711676849, 17.267859345886837], {icon: parkingIconC}).addTo(map)
-					.bindPopup('<b>Parkovisko pred kulturákom</b><br />');
+					.bindPopup('Parkovisko pred kulturákom');
 
 				const parkingN = L.marker([48.27838315331601, 17.264786034894083], {icon: parkingIconN}).addTo(map)
-					.bindPopup('<b>Parkovisko pred nDegustom</b><br />');
+					.bindPopup('Parkovisko pred nDegustom');
+
+				const train = L.marker([48.28255, 17.2709], {icon: trainIcon}).addTo(map)
+					.bindPopup('Vlaková stanica');
+
+				const bus = L.marker([48.2828111, 17.2702389], {icon: busIcon}).addTo(map)
+					.bindPopup('Autobusové nástupište');
 
 				L.control.scale({metric: true, imperial: false}).addTo(map);
 

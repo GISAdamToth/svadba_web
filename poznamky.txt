@@ -29,6 +29,6 @@ text o nás
 odstrániť horizontálne čiary a veľa bieleho priestoru pod ikonkou
  
 to do index.html:
-text pod mapou: štruktúrovane (obrad boldom a pod tým kostol ..., pod tým hostina a pod tým adresa ..., zarovnať na stred)
-upraviť text o ubytovaní
+text pod mapou: štruktúrovane (obrad boldom a pod tým kostol ..., pod tým hostina a pod tým adresa ..., zarovnať na stred): done
+upraviť text o ubytovaní: done
 svadobné dary

@@ -4709,6 +4709,7 @@ input, select, textarea {
 
 	#mapinfo {
 		display: inline-block;
+		text-align: center;
 	}
 
 	#map {
