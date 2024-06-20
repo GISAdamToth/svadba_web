@@ -1,34 +1,9 @@
-							<a href="images/chorvatsko_zapadslnka.jpg" data-lightbox="mygallery" data-title="v Chorvátsku pri západe Slnka">
-								<img src="images/chorvatsko_zapadslnka.jpg" alt="Image 1">
-							</a>
-							<a href="images/bystralavka_navyska.jpg" data-lightbox="mygallery" data-title="sedlo Bystrá lávka v Tatrách">
-								<img src="images/bystralavka_navyska.jpg" alt="Image 2">
-							</a>
-							<a href="images/poludnica_objatie.jpg" data-lightbox="mygallery" data-title="na poludnici pred oŽI">
-								<img src="images/poludnica_objatie.jpg" alt="Image 3">
-							</a>
-							<a href="images/homola.jpg" data-lightbox="mygallery" data-title="na Homole počas korony">
-								<img src="images/homola.jpg" alt="Image 4">
-							</a>
-							<a href="images/prosiek.jpg" data-lightbox="mygallery" data-title="pred prosieckym kostolom">
-								<img src="images/prosiek.jpg" alt="Image 5">
-							</a>
-							<a href="images/stuzkova.jpg" data-lightbox="mygallery" data-title="na Adamovej stužkovej po 2 týždňoch chodenia">
-								<img src="images/stuzkova.jpg" alt="Image 6">
-							</a>
-							<a href="images/tatrandee.jpg" data-lightbox="mygallery" data-title="s Miriam, Ester a Damiánom zmoknutí počas Tatrandee">
-								<img src="images/tatrandee.jpg" alt="Image 7">
-							</a>
-							<a href="images/vnubire.jpg" data-lightbox="mygallery" data-title="v ikonickej Nubire pri Kučišdorfskej priehrade">
-								<img src="images/vnubire.jpg" alt="Image 8">
-							</a>
-
 to do onas.html:
-popisky k fotkám
+popisky k fotkám: done
 text o nás
-odstrániť horizontálne čiary a veľa bieleho priestoru pod ikonkou
-prispôsobiť naše fotky z detstva, aby boli normálne aj na mobile
-pridať šípky na posúvanie medzi fotkami v galérii
+odstrániť horizontálne čiary a veľa bieleho priestoru pod ikonkou: done
+prispôsobiť naše fotky z detstva, aby boli normálne aj na mobile: cca done
+pridať šípky na posúvanie medzi fotkami v galérii: done
  
 to do index.html:
 text pod mapou: štruktúrovane (obrad boldom a pod tým kostol ..., pod tým hostina a pod tým adresa ..., zarovnať na stred): done

@@ -14,24 +14,85 @@
 		<link href="assets/css/lightbox.min.css" rel="stylesheet">
     	<script src="assets/js/lightbox-plus-jquery.min.js"></script>
 
-<!-- 		<style>
+		<style>
 			.gallery {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 30px;
 			}
+
 			.gallery a {
 				display: block;
-				width: 230px; /* Adjust the size as needed */
+				width: 230px;  /*Adjust the size as needed*/ 
 				height: 230px;
 				overflow: hidden;
 			}
+
 			.gallery img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
 			}
-		</style> -->
+
+			.lb-nav a.lb-prev {
+				width: 34%;
+				left: 0;
+				float: left;
+				background: url(images/prev.png) left 48% no-repeat;
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+				opacity: 0;
+				-webkit-transition: opacity 0.6s;
+				-moz-transition: opacity 0.6s;
+				-o-transition: opacity 0.6s;
+				transition: opacity 0.6s;
+			}
+
+			.lb-nav a.lb-prev:hover {
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+				opacity: 1;
+			}
+
+			.lb-nav a.lb-next {
+				width: 64%;
+				right: 0;
+				float: right;
+				background: url(images/next.png) right 48% no-repeat;
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+				opacity: 0;
+				-webkit-transition: opacity 0.6s;
+				-moz-transition: opacity 0.6s;
+				-o-transition: opacity 0.6s;
+				transition: opacity 0.6s;
+			}
+
+			.lb-nav a.lb-next:hover {
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+				opacity: 1;
+			}
+
+			.lb-data .lb-close {
+				display: block;
+				float: right;
+				width: 30px;
+				height: 30px;
+				background: url(images/close.png) top right no-repeat;
+				text-align: right;
+				outline: none;
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+				opacity: 0.7;
+				-webkit-transition: opacity 0.2s;
+				-moz-transition: opacity 0.2s;
+				-o-transition: opacity 0.2s;
+				transition: opacity 0.2s;
+			}
+
+			.lb-data .lb-close:hover {
+				cursor: pointer;
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+				opacity: 1;
+			}
+
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -63,27 +124,26 @@
 				<!-- Main -->
 					<div id="main">
 
-						<article class="post featured">
-							<header class="major">
-								<span class="date"><img src="images/couple.png" width="30" height="30"></span>
-							</header>
-						</article>
+ 						<header class="major">
+							<span class="date"><img src="images/couple.png" width="30" height="30"></span>
+						</header>
 
-						<h3>Janka o Adamovi</h3>
+						<h3 class="aligned_left">Janka o Adamovi</h3>
 						<p>
-							<span class="image left"><img src="images/adam_maly_luk.jpg" alt="" width="300" height="450"/></span>
-							Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.
+							<!-- <span class="image left"><img src="images/adam_maly_luk.jpg" alt="" width="300" height="450"/></span> -->
+							<span class="image left"><img src="images/adam_maly_luk1.jpg" alt="" width="10%" height="0.1%"/></span>
+							Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.t accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum.
 						</p>
 						
 						<h3 class="aligned_right">Adam o Janke</h3>
 						<p>
-							<span class="image right"><img src="images/janka_mala.jpg" alt="" width="300" height="450"/></span>
-							Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.
+							<!-- <span class="image right"><img src="images/janka_mala.jpg" alt="" width="300" height="450"/></span> -->
+ 							<span class="image right"><img src="images/janka_mala.jpg" alt="" width="10rem" height="0.1%"/></span>
+							Ak máte to privilégium poznať Janku a byť jej blízko, tak viete, že s ňou sa nikdy nenudíte a že život. Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis. t accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque p.
 						</p>
 
 						<h3>Galéria</h3>
-						<!-- <div class="gallery"> -->
-						<!-- <div>
+						<div class="gallery">
 							<a href="images/stuzkova_adam.jpg" data-lightbox="mygallery" data-title="Janka na Adamovej stužkovej po 2 týždňoch chodenia, 2018.">
 								<img src="images/stuzkova_adam.jpg" alt="">
 							</a>
@@ -188,21 +248,6 @@
 							</a>
 							<a href="images/mgr2.jpg" data-lightbox="mygallery" data-title="Mgr. najlepšia torta, 2024.">
 								<img src="images/mgr2.jpg" alt="">
-							</a>
-						</div> -->
-
-						<div>
-							<a class="example-image-link" href="images/mgr2.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
-								<img class="example-image" src="images/mgr2.jpg" alt=""/>
-							</a>
-							<a class="example-image-link" href="silvester_spolocna.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard.">
-								<img class="example-image" src="silvester_spolocna.jpg" alt="" />
-							</a>
-							<a class="example-image-link" href="lucka30.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing.">
-								<img class="example-image" src="lucka30.jpg" alt="" />
-							</a>
-							<a class="example-image-link" href="sbs.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close.">
-								<img class="example-image" src="sbs.jpg" alt="" />
 							</a>
 						</div>
 
