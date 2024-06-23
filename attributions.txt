@@ -16,3 +16,4 @@ ndegust: <a href="https://www.freepik.com/icon/spoon_13509575#fromView=search&pa
 parking: <a href="https://www.freepik.com/icon/location_15723490#fromView=search&page=1&position=68&uuid=9aca9c7a-f4a7-4015-8bc8-f1ecdb92f594">Icon by nahumam</a>
 train: <a href="https://www.freepik.com/icon/train_14787346#fromView=search&page=1&position=43&uuid=051d39b1-28ca-4815-856a-04c2ab7bbdb8">Icon by PIXARTIST</a>
 bus: <a href="https://www.freepik.com/icon/transport_15795988#fromView=search&page=1&position=5&uuid=265a551b-b90a-48dc-9dfa-611e52b2ad9c">Icon by Shashank Singh</a>
+camera: <a href="https://www.freepik.com/icon/video_16154732#fromView=search&page=1&position=24&uuid=e3930302-ad3c-4663-b8de-c05594754b5c">Icon by VastDrone</a>
